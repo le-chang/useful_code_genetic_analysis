@@ -124,3 +124,8 @@ Database Drug Bank: https://www.uniprot.org/database/DB-0019
 RNAseq GitHub course https://github.com/hemberg-lab/scRNA.seq.course
   
 Neale lab UKB genetic correlation browser: https://ukbb-rg.hail.is
+
+LDSC: looking genetic correlation between the same ancestry groups.
+
+POPCORN: looking genetic correlation between different ancestry groups.
+
