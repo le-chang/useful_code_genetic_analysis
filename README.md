@@ -130,3 +130,5 @@ visualize the output of LDSC (global genetic correlations): https://github.com/m
 
 POPCORN: looking genetic correlation between different ancestry groups.
 
+Annotate rsid: https://github.com/RHReynolds/colochelpR
+
