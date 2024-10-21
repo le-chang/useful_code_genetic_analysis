@@ -126,7 +126,13 @@ RNAseq GitHub course https://github.com/hemberg-lab/scRNA.seq.course
 Neale lab UKB genetic correlation browser: https://ukbb-rg.hail.is
 
 LDSC: looking genetic correlation between the same ancestry groups.
+
 visualize the output of LDSC (global genetic correlations): https://github.com/mkanai/ldsc-corrplot-rg
+
+ldscr: 
+https://mglev1n.github.io/ldscr/
+
+https://github.com/GenomicSEM/GenomicSEM
 
 POPCORN: looking genetic correlation between different ancestry groups.
 
