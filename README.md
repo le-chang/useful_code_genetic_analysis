@@ -134,6 +134,12 @@ https://mglev1n.github.io/ldscr/
 
 https://github.com/GenomicSEM/GenomicSEM
 
+2 tools to perform LDSC global genetic correlation
+
+https://bigagwas.org 
+
+http://www.gwashug.com/?#/
+
 POPCORN: looking genetic correlation between different ancestry groups.
 
 Annotate rsid: https://github.com/RHReynolds/colochelpR
