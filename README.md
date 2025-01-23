@@ -145,3 +145,7 @@ POPCORN: looking genetic correlation between different ancestry groups.
 Annotate rsid: https://github.com/RHReynolds/colochelpR
 
 LDSC reference data: https://ibg.colorado.edu/cdrom2021/Day06-nivard/GenomicSEM_practical/eur_w_ld_chr/
+
+File manager: Globus: https://app.globus.org/file-manager?two_pane=false
+
+Word cloud teaching app: https://www.wooclap.com/ 
