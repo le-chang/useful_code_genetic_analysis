@@ -1,0 +1,11 @@
+pair	pair_type	n_tested	n_sig	n_pos	n_neg	min_p
+qtA vs dzY	cross-category	25	4	1	3	9.14382e-19
+qtB vs dzY	cross-category	23	3	1	2	7.16168e-06
+qtC vs dzX	cross-category	22	4	2	2	8.18741e-14
+qtA vs dzX	cross-category	21	0	0	0	0.00149478
+qtC vs dzY	cross-category	21	2	1	1	3.95024e-05
+qtB vs dzX	cross-category	17	3	0	3	7.79e-07
+qtA vs qtC	within-category	23	20	16	4	2.93049e-25
+qtA vs qtB	within-category	22	17	14	3	6.85565e-18
+dzX vs dzY	within-category	21	18	12	6	1.4656e-24
+qtB vs qtC	within-category	19	13	13	0	2.64685e-27
