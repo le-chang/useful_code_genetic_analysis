@@ -31,6 +31,29 @@ The `token` in `link_eqtl()` / `link_LD()` is an **LDlink personal access token*
 
 `SNP.PP.H4` is the only per-SNP quantity worth a track. The figure most readers expect is the **two association tracks stacked at the same window** (that is the visual argument for colocalization), with `SNP.PP.H4` as an optional third panel.
 
+
+`res$summary` tells you **whether** the two traits share a causal variant in the region. `res$results` tells you **which SNP** it is likely to be, assuming they do.
+
+| | `res$summary` | `res$results` |
+|---|---|---|
+| What it is | Named numeric vector, one per region | Data frame, one row per SNP present in both datasets |
+| Contents | `nsnps`, `PP.H0.abf` … `PP.H4.abf` | `snp`, `position` (if supplied), per-dataset `V`, `z`, `r`, `lABF`, `internal.sum.lABF`, `SNP.PP.H4` |
+| Sums to 1 across | The five hypotheses H0–H4 | All SNPs in the region |
+| Question answered | Is there one shared causal variant here? | If yes, which SNP is it? |
+| Where it goes | Results table, plot title or caption | Third LocusZoom track, credible set |
+
+**`SNP.PP.H4` is conditional on H4 being true.** Because it always sums to 1 across SNPs, some SNP will look "high" even in a region where `PP.H4.abf` is 0.05. Only read `SNP.PP.H4` for regions where the summary-level PP.H4 is already strong; otherwise you're fine-mapping a shared signal that probably isn't there.
+
+The summary names carry an `.abf` suffix, so the code is `res$summary["PP.H4.abf"]`, not `"PP.H4"`. The text you pasted drops it, which trips people up when they copy it into code.
+
+`res$results` also gives you the 95% credible set for the shared variant:
+
+```r
+o  <- order(res$results$SNP.PP.H4, decreasing = TRUE)
+cs <- cumsum(res$results$SNP.PP.H4[o])
+res$results$snp[o][1:which(cs > 0.95)[1]]
+```
+
 ---
 
 ## Full example (base graphics)
